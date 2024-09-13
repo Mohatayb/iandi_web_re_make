@@ -273,93 +273,109 @@
                         </div>
 
                         <div class="card-body">
-                            <!-- Form -->
-                            <form class="js-validate"
-                                  action="/ajax/contact"
-                                  method="post"
-                                  novalidate="novalidate"
-                                  id="contact-form">
-                                <input type="hidden" name="_token" value="r72FMJKpYtleyKeVntXGfnKJyeip4ObGP8xaeXzR">                                <div class="row gx-3">
-                                    <div class="col-sm-6">
-                                        <!-- Form -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="first-name">First name</label>
-                                            <input type="text" class="form-control form-control-lg"
-                                                   name="first" id="first-name"
-                                                   placeholder="First name" aria-label="First name" required
-                                                   data-msg="Please enter your first name"
-                                                   data-validate-state>
-                                        </div>
-                                        <!-- End Form -->
-                                    </div>
-                                    <!-- End Col -->
+                 <!-- Form -->
+<form class="js-validate"
+action="https://api.web3forms.com/submit"
+method="post"
+id="contact-form">
+<input type="hidden" name="access_key" value="ad7b8c1b-bf48-46c1-876a-d86d46b09796">                              
+<div class="row gx-3">
+  <div class="col-sm-6">
+      <!-- Form -->
+      <div class="mb-3">
+          <label class="form-label" for="first-name">First name</label>
+          <input type="text" class="form-control form-control-lg"
+                 name="first" id="first-name"
+                 placeholder="First name" aria-label="First name" required
+                 data-msg="Please enter your first name"
+                 data-validate-state>
+      </div>
+      <!-- End Form -->
+  </div>
 
-                                    <div class="col-sm-6">
-                                        <!-- Form -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="last-name">Last name</label>
-                                            <input type="text" class="form-control form-control-lg"
-                                                   name="last" id="last-name"
-                                                   placeholder="Last name" aria-label="Last name" required
-                                                   data-msg="Please enter your last name"
-                                                   data-validate-state>
-                                        </div>
-                                        <!-- End Form -->
-                                    </div>
-                                    <!-- End Col -->
-                                </div>
-                                <!-- End Row -->
+  <!-- End Col -->
+  <div class="col-sm-6">
+      <!-- Form -->
+      <div class="mb-3">
+          <label class="form-label" for="last-name">Last name</label>
+          <input type="text" class="form-control form-control-lg"
+                 name="last" id="last-name"
+                 placeholder="Last name" aria-label="Last name" required
+                 data-msg="Please enter your last name"
+                 data-validate-state>
+      </div>
+      <!-- End Form -->
+  </div>
+  <!-- End Col -->
+</div>
+<!-- End Row -->
 
-                                <div class="row gx-3">
-                                    <div class="col-sm-6">
-                                        <!-- Form -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="email">Email address</label>
-                                            <input type="email" class="form-control form-control-lg"
-                                                   name="email" id="email"
-                                                   placeholder="email@site.com" aria-label="email@site.com" required
-                                                   data-msg="Please enter a valid email address"
-                                                   data-validate-state>
-                                        </div>
-                                        <!-- End Form -->
-                                    </div>
-                                    <!-- End Col -->
+<div class="row gx-3">
+  <div class="col-sm-6">
+      <!-- Form -->
+      <div class="mb-3">
+          <label class="form-label" for="email">Email address</label>
+          <input type="email" class="form-control form-control-lg"
+                 name="email" id="email"
+                 placeholder="email@site.com" aria-label="email@site.com" required
+                 data-msg="Please enter a valid email address"
+                 data-validate-state>
+      </div>
+      <!-- End Form -->
+  </div>
+  <!-- End Col -->
 
-                                    <div class="col-sm-6">
-                                        <!-- Form -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="phone-number">Phone <span
-                                                    class="form-label-secondary">(Optional)</span></label>
-                                            <input type="text" class="form-control form-control-lg"
-                                                   name="phone" id="phone-number"
-                                                   placeholder="+90 (xxx) xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx"
-                                                   data-msg="Please enter your phone number"
-                                                   data-validate-state>
-                                        </div>
-                                        <!-- End Form -->
-                                    </div>
-                                    <!-- End Col -->
-                                </div>
-                                <!-- End Row -->
+  <div class="col-sm-6">
+      <!-- Form -->
+      <div class="mb-3">
+          <label class="form-label" for="phone-number">Phone <span
+                  class="form-label-secondary">(Optional)</span></label>
+          <input type="text" class="form-control form-control-lg"
+                 name="phone" id="phone-number"
+                 placeholder="+90 (xxx) xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx"
+                 data-msg="Please enter your phone number"
+                 data-validate-state>
+      </div>
+      <!-- End Form -->
+  </div>
+  <!-- End Col -->
+</div>
+<!-- End Row -->
 
-                                <!-- Form -->
-                                <div class="mb-3">
-                                    <label class="form-label" for="message">Details</label>
-                                    <textarea class="form-control form-control-lg" name="message"
-                                              id="message" placeholder="Tell us about your..."
-                                              aria-label="Tell us about your..." rows="4" required
-                                              data-msg="Please write the message of your message"
-                                              data-validate-state></textarea>
-                                </div>
-                                <!-- End Form -->
+<!-- Form -->
+<div class="mb-3">
+  <label class="form-label" for="message">Details</label>
+  <textarea class="form-control form-control-lg" name="message"
+            id="message" placeholder="Tell us about your..."
+            aria-label="Tell us about your..." rows="4" required
+            data-msg="Please write the message of your message"
+            data-validate-state></textarea>
+</div>
+<!-- End Form -->
 
-                                
+<div class="d-grid">
+  <button id="submit-btn" type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
+  <div id="success-message" class="text-success mt-1"></div>
+</div>
+</form>
 
-                                <div class="d-grid">
-                                    <button id="submit-btn" type="submit" class="btn btn-primary btn-lg">Send inquiry
-                                    </button>
-                                    <div id="success-message" class="text-success mt-1"></div>
-                                </div>
+<!-- JS to handle form submission and display success message -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Simulate form submission (you might want to do this with AJAX in real-world)
+  setTimeout(function() {
+      // Display success message with a green tick
+      const successMessage = document.getElementById("success-message");
+      successMessage.innerHTML = '<i class="bi bi-check-circle-fill"></i> Inquiry sent successfully!';
+      successMessage.style.display = "block";
+
+      // Reset the form fields
+      document.getElementById("contact-form").reset();
+  }, 500); // simulate network delay
+});
+</script>
 
                                 <div class="text-center">
                                     <p class="form-text">We'll get back to you in 1-2 business days.</p>
