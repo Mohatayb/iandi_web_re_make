@@ -2,15 +2,17 @@
 <html lang="en" dir="ltr" style="scroll-behavior: smooth;">
 <head>
     <!-- Title -->
-    <title>Events Calendar | Istanbul&amp;I</title>
+    <title>Home | Istanbul&amp;I</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel="stylesheet" href="/frontend-assets/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
@@ -39,7 +41,9 @@
 
             <link rel="stylesheet" href="/frontend-assets/css/theme.css?v=1.0.3">
         <link rel="stylesheet" href="/frontend-assets/css/custom.css?v=1.1.8">
-    </head>
+        <link rel="stylesheet" href="/frontend-assets/vendor/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="/admin-assets/libs/swiper/swiper.css">
+</head>
 
 <!-- Analytics Scripts -->
 <!-- Cloudflare Web Analytics -->
@@ -78,8 +82,8 @@
     <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand" href="/home" aria-label="Front">
-                <img class="logo-hover" src="/images/logo.png" alt="Istanbul&I" width="200px">
+            <a class="navbar-brand" href="/" aria-label="Front">
+                <img class="logo-hover" src="/frontend-assets/images/logo.png" alt="Istanbul&I" width="200px">
             </a>
             <!-- End Default Logo -->
 
@@ -114,11 +118,11 @@
                         <!-- Mega Menu -->
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="whoWeAreMegaMenu"
                              style="min-width: 14rem;">
-                            <a class="dropdown-item" href=/our-story>Our Story</a>
-                            <a class="dropdown-item" href="/our-team">Our Team</a>
-                            <a class="dropdown-item" href="/our-activities">How we do it</a>
+                            <a class="dropdown-item" href="/our-story.html">Our Story</a>
+                            <a class="dropdown-item" href="/our-team.html">Our Team</a>
+                            <a class="dropdown-item" href="/our-activities.html">How we do it</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href=/contact-us>Contact Us</a>
+                            <a class="dropdown-item" href="/contact-us.html">Contact Us</a>
                         </div>
                         <!-- End Mega Menu -->
                     </li>
@@ -133,7 +137,7 @@
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="eventsMegaMenu"
                              style="min-width: 14rem;">
                             <a class="dropdown-item" href="https://linktr.ee/iiandievents">Register to Events</a>
-                            <a class="dropdown-item" href=/events>Events Calendar</a>
+                            <a class="dropdown-item" href="/events.html">Events Calendar</a>
                         </div>
                         <!-- End Mega Menu -->
                     </li>
@@ -147,7 +151,7 @@
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="eventsMegaMenu"
                              style="min-width: 14rem;">
                             <a class="dropdown-item" href="https://nas.io/istanbulandi">Become a Volunteer</a>
-                            <a class="dropdown-item" href=/volunteer-handbook>Volunteer Handbook<span class="ms-3 fas fa-lock text-primary"></span></a>
+                            <!-- <a class="dropdown-item" href=/volunteer-handbook>Volunteer Handbook<span class="ms-3 fas fa-lock text-primary"></span></a> -->
                         </div>
                     <!-- End Become a Volunteer -->
 
@@ -156,7 +160,7 @@
                     <li class="nav-item">
                         <a class="nav-link"
                            aria-current="page"
-                           href=/news role="button">News</a>
+                           href="/news.html" role="button">News</a>
                     </li>
                     <!-- End News -->
                     <!-- End News -->
@@ -171,52 +175,12 @@
                     <!-- Button -->
                     <li class="nav-item">
                         <a class="btn btn-primary btn-transition"
-                           href="/support-us">Support Us ♥</a>
+                           href="/support-us.html">Support Us ♥</a>
                     </li>
                     <!-- End Button -->
                     <li class="nav-item my-2 ms-2">
                         <div class="hs-has-sub-menu d-flex align-items-start justify-content-start flex-lg-row flex-column">
-    <button type="button" class="hs-mega-menu-invoker border-0 btn mx-0 px-0 dropdown-toggle py-lg-3 py-0 text-secondary" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-
-
-
-        <span>English</span>
-    </button>
-    <div class="hs-sub-menu dropdown-menu dropdown-menu-right border-top-0">
-                    <a href="/ar/events"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary "
-               rel="alternate" hreflang="ar">
-
-
-                <span class="arabic-font-family font-weight-600">
-                    &nbsp; العربية
-                </span>
-            </a>
-                    <a href="/events"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary active"
-               rel="alternate" hreflang="en">
-
-
-                <span class="english-font-family">
-                    &nbsp; English
-                </span>
-            </a>
-                    <a href="/tr/events"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary "
-               rel="alternate" hreflang="tr">
-
-
-                <span class="english-font-family">
-                    &nbsp; Türkçe
-                </span>
-            </a>
-            </div>
-</div>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Collapse -->
+         
         </nav>
     </div>
 </header>

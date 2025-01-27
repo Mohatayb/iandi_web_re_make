@@ -2,15 +2,17 @@
 <html lang="en" dir="ltr" style="scroll-behavior: smooth;">
 <head>
     <!-- Title -->
-    <title>Our Team | Istanbul&amp;I</title>
+    <title>Home | Istanbul&amp;I</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel="stylesheet" href="/frontend-assets/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
@@ -39,7 +41,9 @@
 
             <link rel="stylesheet" href="/frontend-assets/css/theme.css?v=1.0.3">
         <link rel="stylesheet" href="/frontend-assets/css/custom.css?v=1.1.8">
-    </head>
+        <link rel="stylesheet" href="/frontend-assets/vendor/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="/admin-assets/libs/swiper/swiper.css">
+</head>
 
 <!-- Analytics Scripts -->
 <!-- Cloudflare Web Analytics -->
@@ -78,8 +82,8 @@
     <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand" href="/ " aria-label="Front">
-                <img class="logo-hover" src="/images/logo.png" alt="Istanbul&I" width="200px">
+            <a class="navbar-brand" href="/" aria-label="Front">
+                <img class="logo-hover" src="/frontend-assets/images/logo.png" alt="Istanbul&I" width="200px">
             </a>
             <!-- End Default Logo -->
 
@@ -114,11 +118,11 @@
                         <!-- Mega Menu -->
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="whoWeAreMegaMenu"
                              style="min-width: 14rem;">
-                            <a class="dropdown-item" href=/our-story>Our Story</a>
-                            <a class="dropdown-item" href="/our-team">Our Team</a>
-                            <a class="dropdown-item" href="/our-activities">How we do it</a>
+                            <a class="dropdown-item" href="/our-story.html">Our Story</a>
+                            <a class="dropdown-item" href="/our-team.html">Our Team</a>
+                            <a class="dropdown-item" href="/our-activities.html">How we do it</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href=/contact-us>Contact Us</a>
+                            <a class="dropdown-item" href="/contact-us.html">Contact Us</a>
                         </div>
                         <!-- End Mega Menu -->
                     </li>
@@ -133,7 +137,7 @@
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="eventsMegaMenu"
                              style="min-width: 14rem;">
                             <a class="dropdown-item" href="https://linktr.ee/iiandievents">Register to Events</a>
-                            <a class="dropdown-item" href=/events>Events Calendar</a>
+                            <!-- <a class="dropdown-item" href="/events.html">Events Calendar</a> -->
                         </div>
                         <!-- End Mega Menu -->
                     </li>
@@ -147,7 +151,7 @@
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="eventsMegaMenu"
                              style="min-width: 14rem;">
                             <a class="dropdown-item" href="https://nas.io/istanbulandi">Become a Volunteer</a>
-                            <a class="dropdown-item" href=/volunteer-handbook>Volunteer Handbook<span class="ms-3 fas fa-lock text-primary"></span></a>
+                            <!-- <a class="dropdown-item" href=/volunteer-handbook>Volunteer Handbook<span class="ms-3 fas fa-lock text-primary"></span></a> -->
                         </div>
                     <!-- End Become a Volunteer -->
 
@@ -156,7 +160,7 @@
                     <li class="nav-item">
                         <a class="nav-link"
                            aria-current="page"
-                           href=/news role="button">News</a>
+                           href="/news.html" role="button">News</a>
                     </li>
                     <!-- End News -->
                     <!-- End News -->
@@ -171,518 +175,486 @@
                     <!-- Button -->
                     <li class="nav-item">
                         <a class="btn btn-primary btn-transition"
-                           href="/support-us">Support Us ♥</a>
+                           href="/support-us.html">Support Us ♥</a>
                     </li>
                     <!-- End Button -->
                     <li class="nav-item my-2 ms-2">
                         <div class="hs-has-sub-menu d-flex align-items-start justify-content-start flex-lg-row flex-column">
-    <button type="button" class="hs-mega-menu-invoker border-0 btn mx-0 px-0 dropdown-toggle py-lg-3 py-0 text-secondary" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-
-
-
-        <span>English</span>
-    </button>
-    <div class="hs-sub-menu dropdown-menu dropdown-menu-right border-top-0">
-                    <a href="/ar/our-team"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary "
-               rel="alternate" hreflang="ar">
-
-
-                <span class="arabic-font-family font-weight-600">
-                    &nbsp; العربية
-                </span>
-            </a>
-                    <a href="/our-team"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary active"
-               rel="alternate" hreflang="en">
-
-
-                <span class="english-font-family">
-                    &nbsp; English
-                </span>
-            </a>
-                    <a href="/tr/our-team"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary "
-               rel="alternate" hreflang="tr">
-
-
-                <span class="english-font-family">
-                    &nbsp; Türkçe
-                </span>
-            </a>
-            </div>
-</div>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Collapse -->
+         
         </nav>
     </div>
 </header>
 <!-- ========== END HEADER ========== -->
 <!-- ========== END HEADER ========== -->
 
-<!-- ========== MAIN CONTENT ========== -->
-<main id="content" role="main" style="overflow-x: hidden !important;">
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main" style="overflow-x: hidden !important;">
         <!-- Team -->
-    <div class="container content-space-2 content-space-lg-3" data-aos="fade-down"
-         data-aos-duration="2000">
-        <div 
-            >
-            <span
-                class="d-block small font-weight-bold text-cap text-muted text-center">Our Team</span>
-            <h2 class="text-center mx-md-auto my-5 mb-md-9">The Executive Board</h2>
-        </div>
+        <div class="container content-space-2 content-space-lg-3" data-aos="fade-down" data-aos-duration="2000">
+            <div>
+                <span class="d-block small font-weight-bold text-cap text-muted text-center">Our Team</span>
+                <h2 class="text-center mx-md-auto my-5 mb-md-9">The Executive Board</h2>
+            </div>
 
-        <div class="row mb-7 justify-content-center">
-            <!-- End Col -->
             <div class="row mb-7 justify-content-center">
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/volunteers/ibrahim-altaweel">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">Ibrahim Altaweel</h4>
-            <p class="card-text">Events Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/volunteers/mohammad-ishaq">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">Mohammad Ishaq</h4>
-            <p class="card-text">IT Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/volunteers/max-dri">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">Max Dri</h4>
-            <p class="card-text">Communications Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/volunteers/zain-hassan">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">Zain Hassan</h4>
-            <p class="card-text">Development Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/volunteers/mohamed-babiker">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">Mohamed Babiker</h4>
-            <p class="card-text">Community Services Projects Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                                            <div
-                            class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                            >
-                            <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Executive Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                        </div>
-                                            <div
-                            class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                            >
-                            <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Finance Coordinator</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                        </div>
+                <!-- End Col -->
+                <div class="row mb-7 justify-content-center">
+                    <div class="row pb-8 justify-content-center">
+                        <!-- Team Container -->
+                        <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                            <!-- Team -->
+                            <a href="/volunteers/mohamed-babiker.html">
+                                <img class="card-img our-team-img rounded-2" src="/images/board-members/mohamed2.jpg"
+                                    alt="Image Description">
+                                <div class="card card-sm text-center mt-n3 mx-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Mohamed Babiker</h4>
+                                        <p class="card-text">Co-Executive Coordinator</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                                    </div>
                                 </div>
-            <!-- End Col -->
-        </div>
-        <!-- End Row -->
-        <hr>
-
-        <h2 class="text-center mx-md-auto my-5 mb-md-9" 
-            >The Legal Committee</h2>
-
-        <div class="row mb-7 justify-content-center">
-                                        <div
-                    class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                    >
-                    <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Legal Researcher</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                </div>
-                            <div
-                    class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                    >
-                    <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Legal Assistant</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                </div>
-                            <div
-                    class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                    >
-                    <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Legal Director</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                </div>
-                    </div>
-        <!-- End Row -->
-        <hr>
-
-        <h2 class="text-center mx-md-auto my-5 mb-md-9" 
-            >The Ethics Council</h2>
-
-        <div class="row mb-7 justify-content-center ">
-                                                <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Ethics Council Member</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Ethics Council Member</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
-                                    <div
-                        class="col-sm-6 col-md-3 mb-5 mb-lg-0"  
-                        >
-                        <!-- changed nothing -->
-
-<!-- Team -->
-<a href="/become-a-volunteer">
-    <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
-         alt="Image Description">
-    <div class="card card-sm text-center mt-n3 mx-3">
-        <div class="card-body">
-            <h4 class="card-title">This Could Be You</h4>
-            <p class="card-text">Ethics Council Member</p>
-        </div>
-    </div>
-</a>
-<!-- End Team -->
-                    </div>
+                            </a>
+                            <!-- End Team -->
                         </div>
-        <!-- End Row -->
-        <hr>
+                    
+                        <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                            <!-- Team -->
+                            <a href="/volunteers/zayn-hassan.html">
+                                <img class="card-img our-team-img rounded-2" src="/images/board-members/zayn2.jpg"
+                                    alt="Image Description">
+                                <div class="card card-sm text-center mt-n3 mx-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Zayn Hassan</h4>
+                                        <p class="card-text">Co-Executive Coordinator</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End Team -->
+                        </div>
+                    </div>
+                    <div class="row pb-8 justify-content-center">
+                    <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                        <!-- changed nothing -->
 
-        <!-- Card Info -->
-        <div class="text-center">
-            <div class="card card-info-link card-sm">
-                <div class="card-body">
-                    Want to volunteer with us? <a class="card-link ms-2"
-                                                                    href="https://nas.io/istanbulandi">Apply here!
-                        <span
-                            class="bi-chevron-right small ms-1"></span></a>
+                        <!-- Team -->
+                        <a href="/volunteers/mohammad-ishaq.html">
+                            <img class="card-img our-team-img rounded-2 w-100" src="/images/board-members/ishaq2.jpg"
+                                alt="Image Description">
+                            <div class="card card-sm text-center mt-n3 mx-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Mohammad Ishaq</h4>
+                                    <p class="card-text">IT <br/>Coordinator</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-computer"><rect width="14" height="8" x="5" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 18h2"/><path d="M12 18h6"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Team -->
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                        <!-- changed nothing -->
+
+                        <!-- Team -->
+
+                        <a href="/volunteers/dilruba-misirli.html">
+                            <img class="card-img our-team-img rounded-2 w-100" src="/images/board-members/dilruba2.jpg"
+                                alt="Image Description">
+                            <div class="card card-sm text-center mt-n3 mx-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dilruba Mısırlı</h4>
+                                    <p class="card-text">Development <br/>Coordinator</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-ruler"><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"/><path d="m8 6 2-2"/><path d="m18 16 2-2"/><path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- End Team -->
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                        <!-- changed nothing -->
+
+                        <!-- Team -->
+                        <a href="/volunteers/parsa-moradi.html">
+                            <img class="card-img our-team-img rounded-2 w-100" src="/images/board-members/parsa2.jpg"
+                                alt="Image Description">
+                            <div class="card card-sm text-center mt-n3 mx-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Parsa Moradi</h4>
+                                    <p class="card-text">HR <br/>Coordinator</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-speech"><path d="M8.8 20v-4.1l1.9.2a2.3 2.3 0 0 0 2.164-2.1V8.3A5.37 5.37 0 0 0 2 8.25c0 2.8.656 3.054 1 4.55a5.77 5.77 0 0 1 .029 2.758L2 20"/><path d="M19.8 17.8a7.5 7.5 0 0 0 .003-10.603"/><path d="M17 15a3.5 3.5 0 0 0-.025-4.975"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Team -->
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                        <!-- changed nothing -->
+
+                        <!-- Team -->
+
+                        <a href="/volunteers/abdelrahman-mostafa.html">
+                            <img class="card-img our-team-img rounded-2" src="/images/board-members/abdelrahman2.jpeg"
+                                alt="Image Description">
+                            <div class="card card-sm text-center mt-n3 mx-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Abdelrahman Mostafa</h5>
+                                    <p class="card-text">Events <br/>Coordinator</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check-2"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="m16 20 2 2 4-4"/></svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- End Team -->
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                        <!-- changed nothing -->
+
+                        <!-- Team -->
+                        <a href="">
+                            <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                                alt="Image Description">
+                            <div class="card card-sm text-center mt-n3 mx-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hikmet Riad Saleh</h4>
+                                    <p class="card-text">Community Services Projects Coordinator</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sprout"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- End Team -->
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                        <!-- changed nothing -->
+
+                        <!-- Team -->
+
+                        <a href="/volunteers/liliya-vashura.html">
+                            <img class="card-img our-team-img rounded-2" src="/images/board-members/liliya.png"
+                                alt="Image Description">
+                            <div class="card card-sm text-center mt-n3 mx-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Liliya Vashura</h4>
+                                    <p class="card-text">Communication Coordinator</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- End Team -->
+                    </div>
+
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+            <hr>
+
+            <h2 class="text-center mx-md-auto my-5 mb-md-9">The Legal Committee</h2>
+
+            <div class="row mb-7 justify-content-center">
+                <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                    <!-- changed nothing -->
+
+                    <!-- Team -->
+                    <a href="/become-a-volunteer.html">
+                        <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                            alt="Image Description">
+                        <div class="card card-sm text-center mt-n3 mx-3">
+                            <div class="card-body">
+                                <h4 class="card-title">This Could Be You</h4>
+                                <p class="card-text">Legal Researcher</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End Team -->
+                </div>
+                <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                    <!-- changed nothing -->
+
+                    <!-- Team -->
+                    <a href="/become-a-volunteer.html">
+                        <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                            alt="Image Description">
+                        <div class="card card-sm text-center mt-n3 mx-3">
+                            <div class="card-body">
+                                <h4 class="card-title">This Could Be You</h4>
+                                <p class="card-text">Legal Assistant</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End Team -->
+                </div>
+                <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                    <!-- changed nothing -->
+
+                    <!-- Team -->
+                    <a href="/become-a-volunteer.html">
+                        <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                            alt="Image Description">
+                        <div class="card card-sm text-center mt-n3 mx-3">
+                            <div class="card-body">
+                                <h4 class="card-title">This Could Be You</h4>
+                                <p class="card-text">Legal Director</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End Team -->
                 </div>
             </div>
-        </div>
-        <!-- End Card Info -->
-    </div>
-    <!-- End Team -->
-</main>
-<!-- ========== END MAIN CONTENT ========== -->
+            <!-- End Row -->
+            <hr>
 
-<!-- ========== FOOTER ========== -->
-<div class="footer-row red">
-    <div>
-        <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep1" viewBox="0 0 1600 100" style="" data-height="100">
-            <path class="" style="opacity: 1;fill: #04ABD8;" d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
+            <h2 class="text-center mx-md-auto my-5 mb-md-9">The Ethics Council</h2>
+
+            <div class="row mb-7 justify-content-center ">
+                <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                    <!-- changed nothing -->
+
+                    <!-- Team -->
+                    <a href="/become-a-volunteer.html">
+                        <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                            alt="Image Description">
+                        <div class="card card-sm text-center mt-n3 mx-3">
+                            <div class="card-body">
+                                <h4 class="card-title">This could be you</h4>
+                                <p class="card-text">Ethics council member</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End Team -->
+                </div>
+                <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                    <!-- changed nothing -->
+
+                    <!-- Team -->
+                    <a href="/become-a-volunteer.html">
+                        <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                            alt="Image Description">
+                        <div class="card card-sm text-center mt-n3 mx-3">
+                            <div class="card-body">
+                                <h4 class="card-title">This Could Be You</h4>
+                                <p class="card-text">Ethics Council Member</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End Team -->
+                </div>
+                <div class="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                    <!-- changed nothing -->
+
+                    <!-- Team -->
+                    <a href="/become-a-volunteer.html">
+                        <img class="card-img our-team-img rounded-2" src="/images/user-avatar.png"
+                            alt="Image Description">
+                        <div class="card card-sm text-center mt-n3 mx-3">
+                            <div class="card-body">
+                                <h4 class="card-title">This Could Be You</h4>
+                                <p class="card-text">Ethics Council Member</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End Team -->
+                </div>
+            </div>
+            <!-- End Row -->
+            <hr>
+
+            <!-- Card Info -->
+            <div class="text-center">
+                <div class="card card-info-link card-sm">
+                    <div class="card-body">
+                        Want to volunteer with us? <a class="card-link ms-2" href="https://nas.io/istanbulandi">Apply
+                            here!
+                            <span class="bi-chevron-right small ms-1"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Info -->
+        </div>
+        <!-- End Team -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <div class="footer-row red">
+        <div>
+            <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep1" viewBox="0 0 1600 100" style=""
+                data-height="100">
+                <path class="" style="opacity: 1;fill: #04ABD8;" d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
 C979.5,96,980,56,1040,56z"></path>
-            <path class="" style="opacity: 1;fill: #04ABD8;" d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8
+                <path class="" style="opacity: 1;fill: #04ABD8;" d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8
 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z"></path>
-            <path class="" style="opacity: 1;fill: #04ABD8;" d="M1400,96c19.5,0,32.7-4.3,43.7-10c-35.2-17.3-54.1-45.7-115.5-45.7c-32.3,0-52.8,7.9-70.2,17.8
+                <path class="" style="opacity: 1;fill: #04ABD8;" d="M1400,96c19.5,0,32.7-4.3,43.7-10c-35.2-17.3-54.1-45.7-115.5-45.7c-32.3,0-52.8,7.9-70.2,17.8
 c6.4-1.3,13.6-2.1,22-2.1C1340.1,56,1340.3,96,1400,96z"></path>
-            <path class="" style="opacity: 1;fill: #04ABD8;" d="M320,56c6.6,0,12.4,0.5,17.7,1.3c-17-9.6-37.3-17-68.5-17c-60.4,0-79.5,27.8-114,45.2
+                <path class="" style="opacity: 1;fill: #04ABD8;" d="M320,56c6.6,0,12.4,0.5,17.7,1.3c-17-9.6-37.3-17-68.5-17c-60.4,0-79.5,27.8-114,45.2
 c11.2,6,24.6,10.5,44.8,10.5C260,96,259.9,56,320,56z"></path>
-            <path class="" style="opacity: 1;fill: #04ABD8;" d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8
+                <path class="" style="opacity: 1;fill: #04ABD8;" d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8
 c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z"></path>
-            <path class="" style="opacity: 1;fill: #04ABD8;" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
+                <path class="" style="opacity: 1;fill: #04ABD8;" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
 z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4
 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M1205.4,85c-0.2,0-0.4,0-0.6,0c-19.5,0-19.5-13-39-13s-19.4,12.9-39,12.9c0,0-5.9,0-12.3,0.1
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M1205.4,85c-0.2,0-0.4,0-0.6,0c-19.5,0-19.5-13-39-13s-19.4,12.9-39,12.9c0,0-5.9,0-12.3,0.1
 c11.4,6.3,24.9,11,45.5,11C1180.6,96,1194.1,91.2,1205.4,85z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M1447.4,83.9c-2.4,0.7-5.2,1.1-8.6,1.1c-19.3,0-19.6-13-39-13s-19.6,13-39,13c-3,0-5.5-0.3-7.7-0.8
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M1447.4,83.9c-2.4,0.7-5.2,1.1-8.6,1.1c-19.3,0-19.6-13-39-13s-19.6,13-39,13c-3,0-5.5-0.3-7.7-0.8
 c11.6,6.6,25.4,11.8,46.9,11.8C1421.8,96,1435.7,90.7,1447.4,83.9z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M985.8,72c-17.6,0.8-18.3,13-37,13c-19.4,0-19.5-13-39-13c-18.2,0-19.6,11.4-35.5,12.8
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M985.8,72c-17.6,0.8-18.3,13-37,13c-19.4,0-19.5-13-39-13c-18.2,0-19.6,11.4-35.5,12.8
 c11.4,6.3,25,11.2,45.7,11.2C953.7,96,968.5,83.2,985.8,72z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M743.8,73.5c-10.3,3.4-13.6,11.5-29,11.5c-19.4,0-19.5-13-39-13s-19.5,13-39,13c-0.9,0-1.7,0-2.5-0.1
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M743.8,73.5c-10.3,3.4-13.6,11.5-29,11.5c-19.4,0-19.5-13-39-13s-19.5,13-39,13c-0.9,0-1.7,0-2.5-0.1
 c11.4,6.3,25,11.1,45.7,11.1C712.4,96,727.3,84.2,743.8,73.5z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M265.5,72.3c-1.5-0.2-3.2-0.3-5.1-0.3c-19.4,0-19.6,13-39,13c-19.4,0-19.6-13-39-13
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M265.5,72.3c-1.5-0.2-3.2-0.3-5.1-0.3c-19.4,0-19.6,13-39,13c-19.4,0-19.6-13-39-13
 c-15.9,0-18.9,8.7-30.1,11.9C164.1,90.6,178,96,200,96C233.7,96,248.4,83.4,265.5,72.3z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M1692.3,96V85c0,0,0,0-19.5,0s-19.6-13-39-13s-19.6,13-39,13c-0.1,0-0.2,0-0.4,0c11.4,6.2,24.9,11,45.6,11
+                <path class="" style="opacity: 1;fill: #3B1646;" d="M1692.3,96V85c0,0,0,0-19.5,0s-19.6-13-39-13s-19.6,13-39,13c-0.1,0-0.2,0-0.4,0c11.4,6.2,24.9,11,45.6,11
 C1669.9,96,1684.8,96,1692.3,96z"></path>
-            <path class="" style="opacity: 1;fill: #3B1646;" d="M25.5,72C6,72,6.1,84.9-13.5,84.9L-20,85v8.9C0.7,90.1,12.6,80.6,25.9,72C25.8,72,25.7,72,25.5,72z"></path>
-            <path class="" style="fill: #1F2024;" d="M-40,95.6C20.3,95.6,20.1,56,80,56s60,40,120,40s59.9-40,120-40s60.3,40,120,40s60.3-40,120-40
+                <path class="" style="opacity: 1;fill: #3B1646;"
+                    d="M25.5,72C6,72,6.1,84.9-13.5,84.9L-20,85v8.9C0.7,90.1,12.6,80.6,25.9,72C25.8,72,25.7,72,25.5,72z">
+                </path>
+                <path class="" style="fill: #1F2024;" d="M-40,95.6C20.3,95.6,20.1,56,80,56s60,40,120,40s59.9-40,120-40s60.3,40,120,40s60.3-40,120-40
 s60.2,40,120,40s60.1-40,120-40s60.5,40,120,40s60-40,120-40s60.4,40,120,40s59.9-40,120-40s60.3,40,120,40s60.2-40,120-40
 s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z"></path>
-        </svg>
-    </div>
-</div>
-<!-- ========== FOOTER ========== -->
-<footer class="content-space-t-1 footer-color">
-    <div class="container">
-        <div class="row align-items-md-center text-center text-sm-start">
-            <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <!-- Logo -->
-                <a href="index.html" aria-label="Front">
-                    <img class="brand" src="/images/logo-white.png" alt="Istanbul&I" width="120px">
-                </a>
-                <!-- End Logo -->
-            </div>
-
-            <div class="col-sm mb-3 mb-sm-0">
-                <!-- List -->
-                <ul class="list-inline list-separator mb-0">
-                    <li class="list-inline-item"><a class="link-sm link-secondary" href=/our-story>Our Story</a></li>
-
-                    <li class="list-inline-item"><a class="link-sm link-secondary" href=/contact-us>Contact Us</a></li>
-                    <li class="list-inline-item"><a class="link-sm link-secondary" href="https://linktr.ee/iiandievents">Events</a></li>
-                    <li class="list-inline-item"><a class="link-sm link-secondary" href="https://nas.io/istanbulandi">Become a Volunteer</a></li>
-
-
-
-                </ul>
-                <!-- End List -->
-            </div>
-
-            <div class="col-sm-auto">
-                <!-- Socials -->
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
-                           href="https://facebook.com/istanbulandi">
-                            <i class="text-white fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
-                           href="https://instagram.com/istanbulandi">
-                            <i class="text-white fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
-                           href="https://twitter.com/istanbulandi">
-                            <i class="text-white fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
-                           href="https://linkedin.com/company/istanbulandi/">
-                            <i class="text-white fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- End Social -->
-            </div>
-            <div class="col-12 mt-4 text-center mb-4">
-                <p class="small mb-0">Copyright ©2022 Istanbul&amp;I. All rights reserved.</p>
-            </div>
+            </svg>
         </div>
     </div>
-</footer>
-<!-- ========== END FOOTER ========== -->
-<!-- ========== END FOOTER ========== -->
+    <!-- ========== FOOTER ========== -->
+    <footer class="content-space-t-1 footer-color">
+        <div class="container">
+            <div class="row align-items-md-center text-center text-sm-start">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <!-- Logo -->
+                    <a href="index.html" aria-label="Front">
+                        <img class="brand" src="/images/logo-white.png" alt="Istanbul&I" width="120px">
+                    </a>
+                    <!-- End Logo -->
+                </div>
+
+                <div class="col-sm mb-3 mb-sm-0">
+                    <!-- List -->
+                    <ul class="list-inline list-separator mb-0">
+                        <li class="list-inline-item"><a class="link-sm link-secondary" href=/our-story>Our Story</a>
+                        </li>
+
+                        <li class="list-inline-item"><a class="link-sm link-secondary" href=/contact-us>Contact Us</a>
+                        </li>
+                        <li class="list-inline-item"><a class="link-sm link-secondary"
+                                href="https://linktr.ee/iiandievents">Events</a></li>
+                        <li class="list-inline-item"><a class="link-sm link-secondary"
+                                href="https://nas.io/istanbulandi">Become a Volunteer</a></li>
+
+
+
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm-auto">
+                    <!-- Socials -->
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
+                                href="https://facebook.com/istanbulandi">
+                                <i class="text-white fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
+                                href="https://instagram.com/istanbulandi">
+                                <i class="text-white fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
+                                href="https://twitter.com/istanbulandi">
+                                <i class="text-white fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle"
+                                href="https://linkedin.com/company/istanbulandi/">
+                                <i class="text-white fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Social -->
+                </div>
+                <div class="col-12 mt-4 text-center mb-4">
+                    <p class="small mb-0">Copyright ©2022 Istanbul&amp;I. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+    <!-- ========== END FOOTER ========== -->
 
 
 
 
-<script>
+    <script>
 
-</script>
+    </script>
 
-<!-- JS Global Compulsory -->
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="/frontend-assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<!-- JS Implementing Plugins -->
-<script src="/frontend-assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="/frontend-assets/js/hs.core.js"></script>
-<script src="/frontend-assets/vendor/hs-header/dist/hs-header.min.js"></script>
-<script src="/frontend-assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
-<script src="/frontend-assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
-<script src="/frontend-assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS Global Compulsory -->
 
 
-<!-- JS Front -->
-<script src="/frontend-assets/js/theme.min.js"></script>
-
-<!-- JS Front -->
-
-
-<script>
-    window.App = {"csrfToken":"r72FMJKpYtleyKeVntXGfnKJyeip4ObGP8xaeXzR","env":"production","locale":"en","dir":"ltr","authenticated":false,"domain":"https:\/\/istanbulandi.org.tr","translations":[],"routes":{"mediaStore":"https:\/\/istanbulandi.org.tr\/admin\/media"}};
-</script>
-
-<!-- JS Plugins Init. -->
-<script>
-    (function () {
-        // INITIALIZATION OF GO TO
-        // =======================================================
-        new HSGoTo('.js-go-to')
-    });
-</script>
-
-<script>
-    (function () {
-        // INITIALIZATION OF HEADER
-        // =======================================================
-        new HSHeader('#header').init()
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/frontend-assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="/frontend-assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script src="/frontend-assets/js/hs.core.js"></script>
+    <script src="/frontend-assets/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="/frontend-assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="/frontend-assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+    <script src="/frontend-assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-        // INITIALIZATION OF MEGA MENU
-        // =======================================================
-        new HSMegaMenu('.js-mega-menu', {
-            desktop: {
-                position: 'left'
-            }
-        })
-    })()
-</script>
+    <!-- JS Front -->
+    <script src="/frontend-assets/js/theme.min.js"></script>
 
-<script>
-    $(function () { // this replaces document.ready
-        $(window).on("load", function () {
-            setTimeout(function () {
-                $('#jsPreloader').fadeOut(500)
-            }, 1000)
+    <!-- JS Front -->
+
+
+    <script>
+        window.App = { "csrfToken": "r72FMJKpYtleyKeVntXGfnKJyeip4ObGP8xaeXzR", "env": "production", "locale": "en", "dir": "ltr", "authenticated": false, "domain": "https:\/\/istanbulandi.org.tr", "translations": [], "routes": { "mediaStore": "https:\/\/istanbulandi.org.tr\/admin\/media" } };
+    </script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        (function () {
+            // INITIALIZATION OF GO TO
+            // =======================================================
+            new HSGoTo('.js-go-to')
         });
-    });
-</script>
-<script>
-    AOS.init();
-</script>
+    </script>
+
+    <script>
+        (function () {
+            // INITIALIZATION OF HEADER
+            // =======================================================
+            new HSHeader('#header').init()
+
+
+            // INITIALIZATION OF MEGA MENU
+            // =======================================================
+            new HSMegaMenu('.js-mega-menu', {
+                desktop: {
+                    position: 'left'
+                }
+            })
+        })()
+    </script>
+
+    <script>
+        $(function () { // this replaces document.ready
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $('#jsPreloader').fadeOut(500)
+                }, 1000)
+            });
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
