@@ -2,15 +2,17 @@
 <html lang="en" dir="ltr" style="scroll-behavior: smooth;">
 <head>
     <!-- Title -->
-    <title>volunteer name | Istanbul&amp;I</title>
+    <title>Home | Istanbul&amp;I</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel="stylesheet" href="/frontend-assets/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
@@ -39,7 +41,9 @@
 
             <link rel="stylesheet" href="/frontend-assets/css/theme.css?v=1.0.3">
         <link rel="stylesheet" href="/frontend-assets/css/custom.css?v=1.1.8">
-    </head>
+        <link rel="stylesheet" href="/frontend-assets/vendor/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="/admin-assets/libs/swiper/swiper.css">
+</head>
 
 <!-- Analytics Scripts -->
 <!-- Cloudflare Web Analytics -->
@@ -78,8 +82,8 @@
     <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand" href="/home" aria-label="Front">
-                <img class="logo-hover" src="/images/logo.png" alt="Istanbul&I" width="200px">
+            <a class="navbar-brand" href="/" aria-label="Front">
+                <img class="logo-hover" src="/frontend-assets/images/logo.png" alt="Istanbul&I" width="200px">
             </a>
             <!-- End Default Logo -->
 
@@ -114,11 +118,11 @@
                         <!-- Mega Menu -->
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="whoWeAreMegaMenu"
                              style="min-width: 14rem;">
-                            <a class="dropdown-item" href=/our-story.html>Our Story</a>
+                            <a class="dropdown-item" href="/our-story.html">Our Story</a>
                             <a class="dropdown-item" href="/our-team.html">Our Team</a>
                             <a class="dropdown-item" href="/our-activities.html">How we do it</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href=/contact-us.html>Contact Us</a>
+                            <a class="dropdown-item" href="/contact-us.html">Contact Us</a>
                         </div>
                         <!-- End Mega Menu -->
                     </li>
@@ -133,7 +137,7 @@
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="eventsMegaMenu"
                              style="min-width: 14rem;">
                             <a class="dropdown-item" href="https://linktr.ee/iiandievents">Register to Events</a>
-                            <a class="dropdown-item" href=/events>Events Calendar</a>
+                            <a class="dropdown-item" href="/events.html">Events Calendar</a>
                         </div>
                         <!-- End Mega Menu -->
                     </li>
@@ -147,7 +151,7 @@
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="eventsMegaMenu"
                              style="min-width: 14rem;">
                             <a class="dropdown-item" href="https://nas.io/istanbulandi">Become a Volunteer</a>
-                            <a class="dropdown-item" href=/volunteer-handbook>Volunteer Handbook<span class="ms-3 fas fa-lock text-primary"></span></a>
+                            <!-- <a class="dropdown-item" href=/volunteer-handbook>Volunteer Handbook<span class="ms-3 fas fa-lock text-primary"></span></a> -->
                         </div>
                     <!-- End Become a Volunteer -->
 
@@ -156,7 +160,7 @@
                     <li class="nav-item">
                         <a class="nav-link"
                            aria-current="page"
-                           href=/news role="button">News</a>
+                           href="/news.html" role="button">News</a>
                     </li>
                     <!-- End News -->
                     <!-- End News -->
@@ -176,47 +180,7 @@
                     <!-- End Button -->
                     <li class="nav-item my-2 ms-2">
                         <div class="hs-has-sub-menu d-flex align-items-start justify-content-start flex-lg-row flex-column">
-    <button type="button" class="hs-mega-menu-invoker border-0 btn mx-0 px-0 dropdown-toggle py-lg-3 py-0 text-secondary" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-
-
-
-        <span>English</span>
-    </button>
-    <div class="hs-sub-menu dropdown-menu dropdown-menu-right border-top-0">
-                    <a href="/ar/volunteers/zain-hassan"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary "
-               rel="alternate" hreflang="ar">
-
-
-                <span class="arabic-font-family font-weight-600">
-                    &nbsp; العربية
-                </span>
-            </a>
-                    <a href="/volunteers/zain-hassan"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary active"
-               rel="alternate" hreflang="en">
-
-
-                <span class="english-font-family">
-                    &nbsp; English
-                </span>
-            </a>
-                    <a href="/tr/volunteers/zain-hassan"
-               class="dropdown-item d-flex justify-content-start font-weight-400 text-secondary "
-               rel="alternate" hreflang="tr">
-
-
-                <span class="english-font-family">
-                    &nbsp; Türkçe
-                </span>
-            </a>
-            </div>
-</div>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Collapse -->
+         
         </nav>
     </div>
 </header>
@@ -232,7 +196,7 @@
             <div class="d-sm-flex">
                 <div class="flex-shrink-0 mb-3 mb-sm-0">
                     <div class="avatar avatar-xxxl avatar-circle">
-                        <img class="avatar-img volunteer-show-img" src="/storage/uploads/users/163/7249D149-2E44-4F9A-93BD-0393043D46D8---IT-Coordinator-(1).png"
+                        <img class="avatar-img volunteer-show-img" src="/images/board-members/Zain2.jpg"
                              alt="Image Description">
                         <div class="card card-sm text-center mt-n3 mx-0 mx-4 bg-primary py-1 d-flex shadow-lg">
                             <h4 class="card-title text-white d-inline">He/Him</h4>
@@ -252,7 +216,7 @@
                     </div>
                     <!-- End Media -->
                     <div class="d-flex align-items-start">
-                        <h3 class="text-muted mb-0">Development Coordinator</h3>
+                        <h3 class="text-muted mb-0">Co-Executive Coordinator</h3>
                     </div>
                                             <div class="d-flex align-items-start">
                             <a href="mailto:development@istanbulandi.org.tr"><span class="__cf_email__" data-cfemail="03676675666f6c736e666d77436a7077626d61766f626d676a2d6c71642d7771">development@istanbulandi.org.tr</span></a>
@@ -260,13 +224,14 @@
                                         
                 <!-- End Row -->
                     <div class="mt-2"></div>
-                    <p>Zain is from Pakistan and has been at Istanbul&I since 2023. He is currently a Psychology Undergraduate at Kadir Has University, simultaneously working as an assistant researcher. His motto is "Collaboration over competition", emphasizing the importance of collective growth and learning for the success of his team.<br />
+                    <p>Zain has been in Istanbul for 4 years and is currently a Psychology Undergraduate at Kadir Has University, simultaneously working as an assistant researcher. His motto is "Collaboration over competition", emphasizing the importance of collective growth and learning for the success of his team.<br />
 <br />
 He is quite interested in expanding his general knowledge and learning more about new skills, languages and perspectives. He enjoys listening to rock/indie music and playing AAA games. Zain wants to create opportunities for Istanbul&I that propel it to higher levels and allow it to be a place of inclusion irrespective of caste, race or creed.</p>
                                             <hr class="my-3">
                         <h3 class="text-primary">Volunteer History</h3>
                         <p>Tracking Officer (May 2023 - Aug 2023)<br />
-Development Coordinator (2023 - Present)</p>
+Development Coordinator (October 2023 - January 2025) <br>
+Co-Executive Coordinator (February 2025 - Present)</p>
                                     </div>
             </div>
             <!-- End Media -->
