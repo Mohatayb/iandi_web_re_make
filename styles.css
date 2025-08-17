@@ -1,0 +1,117 @@
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #603e67;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      z-index: 1000;
+    }
+    .floating-btn:hover {
+      transform: scale(1.1);
+    }
+    .floating-btn img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .subscribe-hint {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background: #fff;
+      color: #333;
+      padding: 10px 14px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      font-size: 14px;
+      animation: fadeInUp 0.5s ease forwards;
+      z-index: 999;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+    .overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: 16px;
+      max-width: 400px;
+      width: 90%;
+      padding: 20px;
+      transform: scale(0.8);
+      opacity: 0;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .overlay.active .modal {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .modal .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    form button {
+      background: #603e67;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    form button:hover {
+      background: #603e67;
+    }
