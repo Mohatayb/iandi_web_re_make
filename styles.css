@@ -68,22 +68,45 @@
       pointer-events: auto;
     }
 
-    .modal {
-      background: #fff;
-      border-radius: 16px;
-      max-width: 400px;
-      width: 90%;
-      padding: 20px;
-      transform: scale(0.8);
-      opacity: 0;
-      transition: all 0.3s ease;
-      position: relative;
-      margin: 15px;
-    }
-    .overlay.active .modal {
-      transform: scale(1);
-      opacity: 1;
-    }
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  max-height: 65vh; /* <-- ensures it never goes taller than 80% of viewport */
+  padding: 20px;
+  overflow-y: auto; /* <-- scroll if content is too long */
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 15px;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99999;
+}
+
+.overlay.active .modal {
+  transform: scale(1);
+  opacity: 1;
+  display: block; /* force it to show */
+}
+
+.modal {
+  scroll-behavior: smooth;
+}
+
+
 
     .modal .close-btn {
       position: absolute;
