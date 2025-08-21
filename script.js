@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.classList.remove('active');
   });
 
+    overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove('active');
+    }
+  });
+  
   setTimeout(() => {
     hint.style.opacity = '0';
     setTimeout(() => hint.remove(), 500);
