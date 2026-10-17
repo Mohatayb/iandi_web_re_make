@@ -269,11 +269,18 @@
 
       @media (max-width: 991.98px) {
         .hih-hero-logo {
-          position: static;
-          display: block;
-          width: 100px;
-          height: 100px;
-          margin: 0 0 1rem auto;
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          width: 72px;
+          height: 72px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .hih-hero h1 {
+          padding-right: 65px;
+          font-size: clamp(1.8rem, 7vw, 2.5rem);
         }
       }
     </style>
@@ -380,7 +387,32 @@
                     class="dropdown-item"
                     href="https://linktr.ee/iiandievents"
                   >
-                    Join Our Events
+                    Register to Events
+                  </a>
+                </div>
+              </li>
+              <li class="hs-has-sub-menu nav-item">
+                <a
+                  id="projectsMegaMenu"
+                  class="hs-mega-menu-invoker nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+
+                <div
+                  class="hs-sub-menu dropdown-menu"
+                  aria-labelledby="projectsMegaMenu"
+                  style="min-width: 14rem"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="/our-activities/hand-in-hand-learning.html"
+                  >
+                    Hand in Hand Learning
                   </a>
                 </div>
               </li>
@@ -562,7 +594,7 @@
           <div class="section-card p-3 mb-3">
             <div class="ratio ratio-16x9">
               <iframe
-                src="https://www.youtube.com/embed/dy00xAkEUgY"
+                src="https://www.youtube.com/embed/sQHYd7KC254"
                 title="Hand in Hand Learning Project"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -739,7 +771,7 @@
 
                 <h4>Dr. Hagar Soultan</h4>
 
-                <p class="mb-0 text-muted">Project Manager</p>
+                <p class="mb-0 text-muted">Founder and Project Manager</p>
               </div>
             </div>
 
@@ -757,7 +789,7 @@
                   "
                 />
 
-                <h4>Saba</h4>
+                <h4>Saba Darabi</h4>
 
                 <p class="mb-0 text-muted">Program Officer</p>
               </div>
@@ -821,6 +853,25 @@
             <p class="mb-0 mt-2">
               No, the minimum time per session is 30 minutes, and the maximum is
               60 minutes (1 hour).
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Do I have to volunteer every week?</strong>
+
+            <p class="mb-0 mt-2">
+              No, you can volunteer whenever your schedule allows. You’re
+              welcome to join whenever you’re available!
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <strong>Can I observe a session before volunteering?</strong>
+
+            <p class="mb-0 mt-2">
+              Yes! You can contact the officer responsible for that week’s
+              session or the project manager to arrange to observe a session
+              before getting started.
             </p>
           </div>
 
